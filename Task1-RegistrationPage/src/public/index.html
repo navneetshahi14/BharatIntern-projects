@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationPage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form action="/signup" method="post" id="form">
+            <h1>Register Account Form</h1>
+            <div>
+                <label for="name">Username</label>
+                <div>
+                    <input type="text" name="name" id="name" placeholder="Username" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+            <div>
+                <label for="PhoneNumber">Telephone No.</label>
+                <div>
+                    <input type="number" name="PhoneNumber" id="PhoneNumber" placeholder="Phonenumber" required>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <i id="lock" class="fa-solid fa-lock"></i>
+                </div>
+            </div>
+            <div>
+                <label for="ConfirmPassword">Confirm Password</label>
+                <div>
+                    <input type="text" name="ConfirmPassword" id="ConfirmPassword" placeholder="ConfirmPassword" required>
+                    <i class="fa-solid fa-check" id="check"></i>
+                </div>
+            </div>
+            <div class="btn">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <script defer src="./script.js"></script>
+    <script defer src="https://kit.fontawesome.com/f2dc5cead4.js" crossorigin="anonymous"></script>
+</body>
+</html>
